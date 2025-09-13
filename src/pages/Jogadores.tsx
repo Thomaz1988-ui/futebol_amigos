@@ -158,7 +158,7 @@ const Jogadores = () => {
                   <SelectItem value="todos">Todos os status</SelectItem>
                   <SelectItem value="pago">Pagos</SelectItem>
                   <SelectItem value="pendente">Pendentes</SelectItem>
-                  <SelectItem value="atrasado">Atrasados</SelectItem>
+                  <SelectItem value="atrasado">Cartão</SelectItem>
                 </SelectContent>
               </Select>
             </div>

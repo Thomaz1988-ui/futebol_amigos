@@ -120,7 +120,7 @@ const Dashboard = () => {
     const variants = {
       pago: "bg-secondary/20 text-secondary border-secondary/30",
       pendente: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-      atrasado: "bg-primary/20 text-primary border-primary/30",
+      cartao: "bg-primary/20 text-primary border-primary/30",
       despesa: "bg-primary/20 text-primary border-primary/30"
     };
     return variants[status as keyof typeof variants] || variants.pendente;

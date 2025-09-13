@@ -10,7 +10,7 @@ export interface Player {
   email?: string;
   position?: string;
   status: 'ativo' | 'inativo' | 'suspenso';
-  payment_status: 'pago' | 'pendente' | 'atrasado';
+  payment_status: 'pago' | 'pendente' | 'cartao';
   monthly_fee: number;
   last_payment_date?: string;
   due_date?: string;

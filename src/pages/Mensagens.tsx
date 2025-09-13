@@ -16,7 +16,7 @@ interface Player {
   id: number;
   name: string;
   phone: string;
-  status: 'pago' | 'pendente' | 'atrasado';
+  status: 'pago' | 'pendente' | 'cartao';
   selected?: boolean;
 }
 
@@ -264,7 +264,7 @@ const Mensagens = () => {
                   <Button
                     size="sm"
                     variant="outline"
-                    onClick={() => selectByStatus("atrasado")}
+                    onClick={() => selectByStatus("cartão")}
                     className="border-border hover:bg-muted"
                   >
                     Cartão

@@ -361,7 +361,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
             <SelectContent>
               <SelectItem value="pago">Pago</SelectItem>
               <SelectItem value="pendente">Pendente</SelectItem>
-              <SelectItem value="atrasado">Atrasado</SelectItem>
+              <SelectItem value="atrasado">Cartão</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -488,7 +488,7 @@ const EditPlayerForm = ({ player, onUpdatePlayer }: { player: any; onUpdatePlaye
             <SelectContent>
               <SelectItem value="pago">Pago</SelectItem>
               <SelectItem value="pendente">Pendente</SelectItem>
-              <SelectItem value="atrasado">Atrasado</SelectItem>
+              <SelectItem value="atrasado">Cartão</SelectItem>
             </SelectContent>
           </Select>
         </div>

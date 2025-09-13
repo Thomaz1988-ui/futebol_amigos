@@ -159,7 +159,7 @@ const Jogadores = () => {
                   <SelectItem value="todos">Todos os status</SelectItem>
                   <SelectItem value="pago">Pagos</SelectItem>
                   <SelectItem value="pendente">Pendentes</SelectItem>
-                  <SelectItem value="cartaoft">Cartão</SelectItem>
+                  <SelectItem value="cartao">Cartão</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -268,7 +268,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
     phone: "",
     email: "",
     monthly_fee: 200,
-    payment_status: "pendente" as "pago" | "pendente" | "cartaoft",
+    payment_status: "pendente" as "pago" | "pendente" | "cartao",
     status: "ativo" as const,
     join_date: new Date().toISOString().split('T')[0],
     join_time: new Date().toTimeString().slice(0, 5)
@@ -283,7 +283,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
       phone: "",
       email: "",
       monthly_fee: 200,
-      payment_status: "pendente" as "pago" | "pendente" | "cartaoft",
+      payment_status: "pendente" as "pago" | "pendente" | "cartao",
       status: "ativo",
       join_date: new Date().toISOString().split('T')[0],
       join_time: new Date().toTimeString().slice(0, 5)

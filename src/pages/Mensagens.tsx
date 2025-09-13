@@ -16,7 +16,7 @@ interface Player {
   id: number;
   name: string;
   phone: string;
-  status: 'pago' | 'pendente' | 'cartao';
+  status: 'pago' | 'pendente' | 'cartaoft';
   selected?: boolean;
 }
 
@@ -163,7 +163,7 @@ const Mensagens = () => {
     const variants = {
       pago: "bg-secondary/20 text-secondary border-secondary/30",
       pendente: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-      cartao: "bg-primary/20 text-primary border-primary/30"
+      cartaoft: "bg-primary/20 text-primary border-primary/30"
     };
     return variants[status as keyof typeof variants] || variants.pendente;
   };
@@ -283,7 +283,7 @@ const Mensagens = () => {
                     <SelectItem value="todos">Todos</SelectItem>
                     <SelectItem value="pago">Pagos</SelectItem>
                     <SelectItem value="pendente">Pendentes</SelectItem>
-                    <SelectItem value="cartao">Cartão</SelectItem>
+                    <SelectItem value="cartaoft">Cartão</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

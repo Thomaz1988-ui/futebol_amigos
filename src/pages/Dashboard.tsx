@@ -145,11 +145,7 @@ const Dashboard = () => {
           <div>
             <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
             <p className="text-muted-foreground">Visão geral do seu time</p>
-          </div>
-          <Button className="gradient-primary text-white hover:opacity-90">
-            <Activity className="mr-2 h-4 w-4" />
-            Relatório Completo
-          </Button>
+          </div>          
         </div>
 
         {/* Stats Grid */}

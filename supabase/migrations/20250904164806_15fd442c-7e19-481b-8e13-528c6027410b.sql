@@ -21,7 +21,7 @@ CREATE TABLE public.players (
   email TEXT,
   position TEXT,
   status TEXT DEFAULT 'ativo' CHECK (status IN ('ativo', 'inativo', 'suspenso')),
-  payment_status TEXT DEFAULT 'pendente' CHECK (payment_status IN ('pago', 'pendente', 'cartao')),
+  payment_status TEXT DEFAULT 'pendente' CHECK (payment_status IN ('pago', 'pendente', 'atrasado','cartao')),
   monthly_fee DECIMAL(10,2) DEFAULT 200.00,
   last_payment_date DATE,
   due_date DATE,

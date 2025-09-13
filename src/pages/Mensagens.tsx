@@ -283,7 +283,7 @@ const Mensagens = () => {
                     <SelectItem value="todos">Todos</SelectItem>
                     <SelectItem value="pago">Pagos</SelectItem>
                     <SelectItem value="pendente">Pendentes</SelectItem>
-                    <SelectItem value="cartaoft">Cartão</SelectItem>
+                    <SelectItem value="cartao">Cartão</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

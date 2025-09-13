@@ -52,8 +52,8 @@ const Mensagens = () => {
     },
     {
       id: 2,
-      name: "Pagamento Atrasado",
-      message: "Oi {NOME}, sua mensalidade de R$ {VALOR} venceu em {DATA_VENCIMENTO} e ainda não foi quitada. Para evitar o cancelamento da sua vaga, regularize sua situação o quanto antes. Obrigado!",
+      name: "Pagamento Cartão",
+      message: "Oi {NOME}, sua penalidade é de R$ {VALOR} venceu em {DATA_VENCIMENTO} e ainda não foi quitada. Para evitar o cancelamento da sua vaga, regularize sua situação o quanto antes. Obrigado!",
       category: "cobranca"
     },
     {
@@ -267,7 +267,7 @@ const Mensagens = () => {
                     onClick={() => selectByStatus("atrasado")}
                     className="border-border hover:bg-muted"
                   >
-                    Atrasados
+                    Cartão
                   </Button>
                 </div>
               </div>
@@ -283,7 +283,7 @@ const Mensagens = () => {
                     <SelectItem value="todos">Todos</SelectItem>
                     <SelectItem value="pago">Pagos</SelectItem>
                     <SelectItem value="pendente">Pendentes</SelectItem>
-                    <SelectItem value="atrasado">Atrasados</SelectItem>
+                    <SelectItem value="cartão">Cartão</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

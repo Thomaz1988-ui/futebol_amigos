@@ -264,7 +264,7 @@ const Mensagens = () => {
                   <Button
                     size="sm"
                     variant="outline"
-                    onClick={() => selectByStatus("cartão")}
+                    onClick={() => selectByStatus("cartãoft")}
                     className="border-border hover:bg-muted"
                   >
                     Cartão

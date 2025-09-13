@@ -158,7 +158,7 @@ const Jogadores = () => {
                   <SelectItem value="todos">Todos os status</SelectItem>
                   <SelectItem value="pago">Pagos</SelectItem>
                   <SelectItem value="pendente">Pendentes</SelectItem>
-                  <SelectItem value="atrasado">Cartão</SelectItem>
+                  <SelectItem value="cartao">Cartão</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -361,7 +361,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
             <SelectContent>
               <SelectItem value="pago">Pago</SelectItem>
               <SelectItem value="pendente">Pendente</SelectItem>
-              <SelectItem value="atrasado">Cartão</SelectItem>
+              <SelectItem value="cartao">Cartão</SelectItem>
             </SelectContent>
           </Select>
         </div>

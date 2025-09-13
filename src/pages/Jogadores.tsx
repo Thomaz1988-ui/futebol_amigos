@@ -17,7 +17,7 @@ interface Player {
   phone: string;
   email: string;
   monthlyFee: number;
-  status: 'pago' | 'pendente' | 'atrasado';
+  status: 'pago' | 'pendente' | 'cartao';
   joinDate: string;
 }
 
@@ -41,7 +41,7 @@ const Jogadores = () => {
     const variants = {
       pago: "bg-secondary/20 text-secondary border-secondary/30",
       pendente: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-      atrasado: "bg-primary/20 text-primary border-primary/30"
+      cartao: "bg-primary/20 text-primary border-primary/30"
     };
     return variants[status as keyof typeof variants] || variants.pendente;
   };
@@ -267,7 +267,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
     phone: "",
     email: "",
     monthly_fee: 200,
-    payment_status: "pendente" as "pago" | "pendente" | "atrasado",
+    payment_status: "pendente" as "pago" | "pendente" | "cartao",
     status: "ativo" as const,
     join_date: new Date().toISOString().split('T')[0],
     join_time: new Date().toTimeString().slice(0, 5)
@@ -282,7 +282,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
       phone: "",
       email: "",
       monthly_fee: 200,
-      payment_status: "pendente" as "pago" | "pendente" | "atrasado",
+      payment_status: "pendente" as "pago" | "pendente" | "cartao",
       status: "ativo",
       join_date: new Date().toISOString().split('T')[0],
       join_time: new Date().toTimeString().slice(0, 5)
@@ -354,7 +354,7 @@ const AddPlayerForm = ({ onAddPlayer }: { onAddPlayer: (player: any) => void }) 
         </div>
         <div>
           <Label htmlFor="payment_status" className="text-foreground">Status de Pagamento</Label>
-          <Select value={formData.payment_status} onValueChange={(value) => setFormData({...formData, payment_status: value as "pago" | "pendente" | "atrasado"})}>
+          <Select value={formData.payment_status} onValueChange={(value) => setFormData({...formData, payment_status: value as "pago" | "pendente" | "cartao"})}>
             <SelectTrigger className="bg-background border-border">
               <SelectValue placeholder="Selecione..." />
             </SelectTrigger>

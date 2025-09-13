@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sistema de gestão financeira para futebol - Dark Mode com botões vermelhos */
+
+@layer base {
+  :root {
+    /* Light theme */
+    --background: 0 0% 100%;
+    --foreground: 222.2 47% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47% 11.2%;
+
+    /* Botões vermelhos principais */
+    --primary: 0 84% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Verde para futebol */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 0 84% 60%;
+
+    --radius: 0.75rem;
+
+    /* Gradientes futebol */
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 90% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 70% 40%));
+    --gradient-bg: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
+
+    /* Sombras elegantes */
+    --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    --shadow-button: 0 4px 20px rgba(220, 38, 127, 0.2);
+
+    /* Sidebar light */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14.3% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 0 84% 60%;
+  }
+
+  .dark {
+    /* Dark theme */
+    --background: 222.2 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 217.2 32.6% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Botões vermelhos principais */
+    --primary: 0 84% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Verde para futebol */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 0 84% 60%;
+
+    /* Gradientes futebol */
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 90% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 70% 40%));
+    --gradient-bg: linear-gradient(180deg, hsl(222.2 47% 6%), hsl(217.2 32.6% 8%));
+
+    /* Sombras elegantes */
+    --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    --shadow-button: 0 4px 20px rgba(220, 38, 127, 0.4);
+
+    /* Sidebar dark */
+    --sidebar-background: 222.2 47% 4%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217.2 32.6% 12%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 217.2 32.6% 15%;
+    --sidebar-ring: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-bg {
+    background: var(--gradient-bg);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-button {
+    box-shadow: var(--shadow-button);
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
